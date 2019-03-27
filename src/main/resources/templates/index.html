@@ -3,12 +3,21 @@
 <head>
     <title>Home Page</title>
 </head>
-<body ng-app="">
+<body ng-app="myapp">
+<div ng-controller="ImageController">
+<button ng-click="getImage();">get image!</button>
+</div>
+	
 	<div>
 		<label>Name:</label>
       	<input type="text" ng-model="yourName" placeholder="Enter a name here"/>
       	<h1>Hello {{yourName}}!</h1>
+      	<h2>{{$scope.test}}</h2>
     </div>
 </body>
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+ <script th:src="@{/javascript/app.js}"></script>
+ <script th:src="@{/javascript/ImageController.js}"></script>
+ <script th:src="@{/javascript/ImageService.js}"></script>
+ 
 </html>
