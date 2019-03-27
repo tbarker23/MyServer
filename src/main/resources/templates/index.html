@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- need this xmlns for the CDN/Script tag namespace stuff -->
+<head>
+    <title>Home Page</title>
+</head>
+<body ng-app="">
+	<div>
+		<label>Name:</label>
+      	<input type="text" ng-model="yourName" placeholder="Enter a name here"/>
+      	<h1>Hello {{yourName}}!</h1>
+    </div>
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</html>
